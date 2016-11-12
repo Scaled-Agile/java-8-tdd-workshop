@@ -47,16 +47,18 @@ public class Employee {
         };
     }
 
-    // TODO: Implement by using lambda function
-    public static Comparator<? super Employee> getSortingByNameWithLamdbaFunction() {
+    // TODO: Implement by using a lambda function
+    public static Comparator<? super Employee> getSortingByNameWithLambdaFunction() {
         throw new UnsupportedOperationException("To be implemented");
     }
 
-    /* TODO:
-    /   1. Implement by using lambda function with multiple conditions
-    /   2. Implement by Static Method Reference and Function composition
-     */
-    public static Comparator<? super Employee> getSortingByNameAndAge() {
+    // TODO: Implement by using a lambda function that has multiple conditions
+    public static Comparator<? super Employee> getSortingByNameAndAgeWithLambdaFunction() {
+        throw new UnsupportedOperationException("To be implemented");
+    }
+
+    // TODO: Implement by using Function composition and Static Method References
+    public static Comparator<? super Employee> getSortingByNameAndAgeWithFunctionComposition() {
         throw new UnsupportedOperationException("To be implemented");
     }
 }

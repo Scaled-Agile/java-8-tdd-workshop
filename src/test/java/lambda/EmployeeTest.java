@@ -27,12 +27,17 @@ public class EmployeeTest {
                 new Employee("Katie", 30),
                 new Employee("Jason", 35)
         );
-        employees.sort(Employee.getSortingByNameWithLamdbaFunction());
+        employees.sort(Employee.getSortingByNameWithLambdaFunction());
         assertThat(employees.get(0), equalTo(new Employee("Jason", 35)));
     }
 
     @Test
-    public void testSortingByNameAndAge() {
+    public void testSortingByNameAndAgeWithLambdaFunction() {
+        // TODO: Build your test case
+    }
+
+    @Test
+    public void testSortingByNameAndAgeWithFunctionComposition() {
         // TODO: Build your test case
     }
 }

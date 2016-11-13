@@ -1,6 +1,7 @@
 package stream;
 
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 
 public class WordUtil {
@@ -21,6 +22,15 @@ public class WordUtil {
     }
 
     public static <T> List<T> zip(List<String> words1, List<String> words2) {
+        throw new UnsupportedOperationException("To be implemented");
+    }
+
+    public static int maxLength(List<String> words) {
+        // TODO: Implement using Stream reduce
+        throw new UnsupportedOperationException("To be implemented");
+    }
+
+    public static Map<String,Integer> groupBy(List<String> words) {
         throw new UnsupportedOperationException("To be implemented");
     }
 }

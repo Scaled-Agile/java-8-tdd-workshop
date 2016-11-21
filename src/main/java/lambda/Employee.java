@@ -48,7 +48,7 @@ public class Employee {
     }
 
     // TODO: Implement by using lambda function
-    public static Comparator<? super Employee> getSortingByNameWithLamdbaFunction() {
+    public static Comparator<? super Employee> getSortingByNameWithLambdaFunction() {
         return (e1, e2) -> e1.getName().compareTo(e2.getName());
     }
 

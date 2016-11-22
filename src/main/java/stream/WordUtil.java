@@ -21,7 +21,7 @@ public class WordUtil {
         throw new UnsupportedOperationException("To be implemented");
     }
 
-    public static <T> List<T> zip(List<String> words1, List<String> words2) {
+    public static <T> List<T> zip(List<T> words1, List<T> words2) {
         throw new UnsupportedOperationException("To be implemented");
     }
 
@@ -30,7 +30,7 @@ public class WordUtil {
         throw new UnsupportedOperationException("To be implemented");
     }
 
-    public static Map<String,Integer> groupBy(List<String> words) {
+    public static Map<String,Long> groupBy(List<String> words) {
         throw new UnsupportedOperationException("To be implemented");
     }
 }

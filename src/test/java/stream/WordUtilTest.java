@@ -1,5 +1,6 @@
 package stream;
 
+import com.google.common.collect.Maps;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -38,6 +39,7 @@ public class WordUtilTest {
         List<String> words2 = Arrays.asList("world");
 
         assertEquals(Arrays.asList("hello", "world", "java"), WordUtil.zip(words1, words2));
+//        assertEquals(Arrays.asList("world", "hello", "java"), WordUtil.zip(words2, words1));
     }
 
     @Test
@@ -50,14 +52,14 @@ public class WordUtilTest {
     @Test
     public void testGroupBy() {
         List<String> words = Arrays.asList("hello", "world", "hello", "java", "hello", "world");
-        Map<String, Integer> expected = new HashMap<String, Integer>() {
+        Map<String, Long> expected = new HashMap<String, Long>() {
             {
-                put("hello", 3);
-                put("world", 2);
-                put("java", 1);
+                put("java", 1L);
+                put("world", 2L);
+                put("hello", 3L);
             }
         };
 
-        assertEquals(expected, WordUtil.groupBy(words));
+        assertTrue(Maps.difference(expected, WordUtil.groupBy(words)).areEqual());
     }
 }

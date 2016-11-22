@@ -23,5 +23,24 @@ public class ShippingServiceTest {
     }
 
     // TODO: Build test cases for getCurrentLocationOfOrderWithId(String orderId)
+    @Test
+    public void should_return_no_location_when_order_not_exists() {
+        String orderId = "order-does-not-exist";
 
+        assertEquals("No location found", ShippingService.getCurrentLocationOfOrderWithId(orderId));
+    }
+
+    @Test
+    public void should_return_no_location_when_order_without_tracking_info() {
+        String orderId = "test-order-without-tracking-id";
+
+        assertEquals("No location found", ShippingService.getCurrentLocationOfOrderWithId(orderId));
+    }
+
+    @Test
+    public void should_return_location_when_order_with_tracking_info() {
+        String orderId = "test-order-with-tracking-id";
+
+        assertEquals("Melbourne", ShippingService.getCurrentLocationOfOrderWithId(orderId));
+    }
 }
